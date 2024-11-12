@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <Compile Update="Pages\CatalogPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\FormPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\MainPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\VerificationPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Pages\CatalogPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\FormPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\MainPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\VerificationPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

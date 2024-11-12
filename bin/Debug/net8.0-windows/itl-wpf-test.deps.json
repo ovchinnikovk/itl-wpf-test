@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "itl-wpf-test/1.0.0": {
+        "runtime": {
+          "itl-wpf-test.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "itl-wpf-test/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

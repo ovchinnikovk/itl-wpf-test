@@ -1,0 +1,70 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RootNamespace>itl_wpf_test</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="src\font\Montserrat-SemiBoldItalic.ttf" />
+    <None Remove="src\image\iwt_small.png" />
+    <None Remove="src\image\qr-catalog1.jpg" />
+    <None Remove="src\image\qr-catalog2.jpg" />
+    <None Remove="src\image\red_small.png" />
+    <None Remove="src\image\soldier1.jpg" />
+    <None Remove="src\image\soldier2.jpg" />
+    <None Remove="src\image\soldier3.jpg" />
+    <None Remove="src\image\soldier4.jpg" />
+    <None Remove="src\image\soldier5.jpg" />
+    <None Remove="src\image\soldier6.jpg" />
+    <None Remove="src\Vector1.png" />
+    <None Remove="src\Vector2.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="src\font\Montserrat-SemiBoldItalic.ttf">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="src\image\iwt_big.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="src\image\iwt_small.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="src\image\qr-catalog1.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="src\image\qr-catalog2.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="src\image\red_big.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="src\image\red_small.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="src\image\soldier1.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="src\image\soldier2.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="src\image\soldier3.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="src\image\soldier4.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="src\image\soldier5.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="src\image\soldier6.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+</Project>

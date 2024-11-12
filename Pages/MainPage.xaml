@@ -1,0 +1,111 @@
+﻿<Page x:Class="itl_wpf_test.Pages.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:itl_wpf_test.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="1080" d:DesignWidth="1920"
+      Title="MainPage">
+
+    <Page.Resources>
+        <Style x:Key="ContinueButton" TargetType="{x:Type Button}">
+            <Setter Property="Foreground" Value="#AEAEAE"/>
+            <Setter Property="FontSize" Value="46px"/>
+            <Setter Property="Margin" Value="0,0,0,0"/>
+            <Setter Property="MaxHeight" Value="190"/>
+            <Setter Property="MaxWidth" Value="800"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border Background="{TemplateBinding Background}" CornerRadius="100" BorderThickness="2" BorderBrush="White">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Background">
+                <Setter.Value>
+                    <LinearGradientBrush EndPoint="1,0" StartPoint="0,0">
+                        <GradientStop Color="#FF1B1B1B" Offset="0"/>
+                        <GradientStop Color="#FF1B1B1B" Offset=".3"/>
+                        <GradientStop Color="#FF131313" Offset=".5"/>
+                        <GradientStop Color="#FF1B1B1B" Offset=".7"/>
+                        <GradientStop Color="#FF1B1B1B" Offset="1"/>
+                    </LinearGradientBrush>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#FF1B1B1B"/>
+                    <Setter Property="Foreground" Value="White"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style x:Key="HeaderTextBlock" TargetType="{x:Type TextBlock}">
+            <Setter Property="FontFamily" Value="../src/font/#Montserrat-SemiBoldItalic"/>
+            <Setter Property="FontSize" Value="90px"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="TextAlignment" Value="Center"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="FontStyle" Value="Italic"/>
+        </Style>
+    </Page.Resources>
+
+    <Grid Background="#FF121212">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.5*"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="0.5*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="1.4*"></RowDefinition>
+            <RowDefinition Height="1.4*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+
+        <Image x:Name="IWTImageBig" Grid.Column="0" Grid.Row="0" Grid.RowSpan="4"
+            Source="../src/image/iwt_big.png"
+            Width="280"
+            HorizontalAlignment="Left"/>
+
+        <Image x:Name="REDImageBig" Grid.Column="3" Grid.Row="0" Grid.RowSpan="4"
+            Source="../src/image/red_big.png"
+            Width="280"
+            HorizontalAlignment="Right"/>
+
+        <TextBlock x:Name="Header" Grid.Column="1" Grid.Row="1" 
+         Style="{StaticResource HeaderTextBlock}">
+         ИННОВАЦИОННЫЕ
+         <LineBreak/>
+         ОРУЖЕЙНЫЕ
+         <LineBreak/>
+         ТЕХНОЛОГИИ
+        </TextBlock>
+
+        <Button x:Name="ContinueButton" Grid.Column="1" Grid.Row="2"
+             Style="{StaticResource ContinueButton}"
+             Click="ContinueButton_Click">
+            <TextBlock FontSize="54px">
+             Нажмите на экран,
+             <LineBreak/>
+             чтобы продолжить
+            </TextBlock>
+        </Button>
+
+        <Grid x:Name="IconsGrid" Grid.Column="1" Grid.Row="3">
+            <Image x:Name="IWTImageSmall" Source="../src/image/iwt_small.png"
+                Width="200"
+                HorizontalAlignment="Left"
+                Margin="220,0,0,0"/>
+            <Image x:Name="REDImageSmall" Source="../src/image/red_small.png"
+                Width="200"
+                HorizontalAlignment="Right"
+                Margin="0,0,220,0"/>
+        </Grid>
+
+    </Grid>
+</Page>
